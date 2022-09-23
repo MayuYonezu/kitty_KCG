@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: #7B586E;
+    letter-spacing: 15px;
+}
+
+h2 {
+    font-weight: bold; 
+    font-size: 30px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+p {
+    font-weight: bold; 
+}
+
+/* firstview */
+.firstview {
+    background-color: #FFE7E3;
+    width: 100vw;
+    height: 100vh;
+}
+.firstview h1 {
+    font-size: 64px;
+}
+
+.firstview-text{
+    padding-top: 100px;
+    padding-left: 250px;
+    float: left;
+}
+
+.firstview-img img{
+    width: 35%;
+    height: 35%;
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+/* about */
+.about {
+    background-color: #FFCCC5;
+}
+
+/* list */
+.list {
+    background-color: #FFE7E3;
+}
+
+/* point */
+.point {
+    background-color: #FFCCC5;
+}
+
+/* detail */
+.detail {
+    background-color: #FFE7E3;
+}
+
+/* size */
+
+/* reserve */
