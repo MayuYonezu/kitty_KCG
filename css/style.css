@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 
 h1,
@@ -46,6 +47,52 @@ p {
     background-color: #FFCCC5;
 }
 
+.under {
+    border-bottom: 3px dotted #fff;
+}
+
+/*ふわっとCSS*/
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+  }
+  
+  @-webkit-keyframes fuwatAnime {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  
+  @keyframes fuwatAnime {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
 .logo {
     height: 70px;
 }
@@ -79,6 +126,12 @@ header a{
     color: #7B586E;
     letter-spacing: 5px;
     font-weight: bold;
+    transition-duration : 1s;
+}
+
+header a:hover{
+    color: #fff;
+    transition-duration : 1s;
 }
 
 .firstview h1 {
@@ -117,6 +170,10 @@ header a{
     letter-spacing: 5px;
 }
 
+.about p {
+    font-size: 14px;
+}
+
 .about img {
     width: 400px;
     margin: 40px;
@@ -147,6 +204,14 @@ header a{
     box-shadow: 3px 3px 0px 0px #7B586E;
     width: 500px;
     margin: 50px;
+    transition-duration : 1s;
+}
+
+.list-box:hover {
+    background-color:#fff;
+    border: 3px solid #FFCCC5;
+    box-shadow: 3px 3px 0px 0px #fff;
+    transition-duration : 1s;
 }
 
 .list img {
@@ -160,7 +225,9 @@ header a{
 }
 
 .list-text h4 {
+    color:#7B586E;
     border-bottom: 3px dotted #7B586E;
+    transition-duration : 1s;
 }
 
 .text-12 {
@@ -209,13 +276,32 @@ header a{
 .size {
     background-color: #FFE7E3;
     padding-bottom: 50px;
+    text-align: center;
 }
+  
+  .slider {
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  /*slick setting*/
+  .slick-prev:before,
+  .slick-next:before {
+    color: #7B586E;
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-
-.size img{
+.size-box img {
     height: 200px;
-    padding: 10px;
-    margin-top: 10px;
+    margin: 30px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .size-box {
@@ -224,7 +310,16 @@ header a{
     background-color:#FFE7E3;
     border: 3px solid #ffffff;
     box-shadow: 3px 3px 0px 0px #7B586E;
-    
+    margin-top: 50px;
+    margin-left: 30px;
+    transition-duration : 1s;
+}
+
+.size-box:hover {
+    background-color:#fff;
+    border: 3px solid #FFCCC5;
+    box-shadow: 3px 3px 0px 0px #fff;
+    transition-duration : 1s;
 }
 
 .size h3 {
@@ -241,7 +336,9 @@ header a{
     font-weight:bold;
     padding: 10px;
     padding-bottom: 20px;
+    text-align: left;
 }
+
 
 .reserve {
     background-color: #FFE7E3;
@@ -257,11 +354,19 @@ header a{
     padding: 50px;
     margin-right: 50px;
     margin-left: 50px;
+    transition-duration : 1s;
 }
 
 .reserve-box {
     text-align: left;
     width: 400px;
+}
+
+.frame:hover {
+    background-color:#fff;
+    border: 3px solid #FFCCC5;
+    box-shadow: 3px 3px 0px 0px #fff;
+    transition-duration : 1s;
 }
 
 .reserve h3 {
@@ -280,6 +385,10 @@ header a{
     padding: 50px;
 }
 
+#limited {
+    padding: 100px 0;
+}
+
 footer {
     text-align: center;
     font-weight: bold;
@@ -288,3 +397,4 @@ footer {
     padding-top: 25px;
     height: 70px;
 }
+
