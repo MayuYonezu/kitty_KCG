@@ -266,12 +266,12 @@ header a:hover{
     background-color: #FFCCC5;
     padding-bottom: 100px;
 }
-@media (min-width: 1200px) {
 
 .about-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px auto;
     margin-top: 50px;
 }
 
@@ -281,11 +281,11 @@ header a:hover{
 }
 
 .about p {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .about img {
-    width: 400px;
+    width: 30%;
     margin: 40px;
     object-fit: contain;
     box-shadow: 3px 3px 0px 0px #fff;
@@ -293,15 +293,38 @@ header a:hover{
 }
 
 .about .about-text{
-    width: 400px;
-    margin: 20px;
+    width: 50%;
+    margin: 10px;
     margin-left: 50px;
     line-height: 2;
 }
 
+
+@media(max-width:800px) {
+    .about img {
+        width: 30%;
+        margin: 0px;
+        object-fit: contain;
+        box-shadow: 3px 3px 0px 0px #fff;
+    
+    }
+
+    .about .about-text{
+        width: 40%;
+        margin-left: 10;
+        line-height: 2;
+    }
+
+    .about p {
+        font-size: 10px;
+        margin-left: 20px;
+        letter-spacing: 3px;
+    }
 }
 
-@media(max-width:768px) {
+
+
+@media(max-width:480px) {
 
     h2 {
         padding-top: 70px;
@@ -312,23 +335,24 @@ header a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 10% auto;
         margin-top: 50px;
     }
     
     .about h3 {
-        font-size: 24px;
+        font-size: 16px;
         letter-spacing: 5px;
     }
     
     .about p {
-        font-size: 8px;
+        font-size: 10px;
         margin-left: 20px;
         letter-spacing: 3px;
     }
     
     .about img {
-        width: 30%;
-        
+        width: 40%;
+        margin: 0px;
         object-fit: contain;
         box-shadow: 3px 3px 0px 0px #fff;
     
@@ -336,6 +360,7 @@ header a:hover{
     
     .about .about-text{
         width: 50%;
+        margin: 0;
         line-height: 2;
     }
 }
@@ -466,7 +491,7 @@ header a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 50px;
+        padding: 20px;
         background-color:#FFE7E3;
         border: 3px solid #ffffff;
         box-shadow: 3px 3px 0px 0px #7B586E;
