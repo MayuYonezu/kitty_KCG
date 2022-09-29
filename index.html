@@ -2,12 +2,24 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/icon.png" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./images/icon.png" />
+    <meta property="og:title" content="Kitasenju Cake Gide" />
+    <meta property="og:image" content="./images/here.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kitasenju Cake Gide" />
+    <meta property="og:description" content="Kitasenju Cake Gideは北千住のケーキ屋を紹介します。" />
+    <meta property="og:description" value="hogehoge">
     <title>Kitasenju Cake Gide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -16,17 +28,19 @@
             <div class="logo">
                 <img src="./images/logo.png" alt="">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#list">list</a></li>
-                    <li><a href="#point">point</a></li>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about">about</a></li>
+                    <li class="nav-item"><a href="#list">list</a></li>
+                    <li class="nav-item"><a href="#point">point</a></li>
                 </ul>
             </nav>
         </div>
         <div class="firstview">
-            <h1>Kitasenju<br>Cake<br>Gide</h1>
-            <img src="./images/lamezon.png" alt="">
+            <div class="all-contents">
+                <h1>Kitasenju<br>Cake<br>Gide</h1>
+                <img src="./images/lamezon.png" alt="">
+            </div>
         </div>
     </header>
 
@@ -36,7 +50,6 @@
         <div class="about-box">
             <img src="./images/map.png" alt="">
             <div class="about-text">
-                <h3>北千住付近</h3>
                 <p>北千住駅付近のケーキ屋さんとケーキ屋でアルバイトをしている私流買うときのポイントを紹介します。お祝い/記念日/お土産のケーキ選びを楽しみましょう！</p>
             </div>
         </div>
@@ -177,7 +190,7 @@
                     <div class="text-all">
                         <div class="list-text">
                             <h3>a la campague</h3>
-                            <h4>OIOI1・4階徒歩1分</h4>
+                            <h4>OIOI1/4階徒歩1分</h4>
                         </div>
                         <div class="text-12">
                             <div class="list-text1">
@@ -203,13 +216,17 @@
         <div class="pointbox-all">
             <div class="point-box">
                 <img src="./images/point1.png" alt="">
-                <h3>size</h3>
-                <p>食べる人数など食べる用途に合わせたケーキのサイズを紹介します。</p>
+                <div class="intro_content_right">
+                    <h3>size</h3>
+                    <p>食べる人数など食べる用途に合わせたケーキのサイズを紹介します。</p>
+                </div>
             </div>
             <div class="point-box">
                 <img src="./images/point2.png" alt="">
-                <h3>reserve</h3>
-                <p>ケーキを買うときは予約がおすすめ。予約の利点と予約する時に事前に決めておくことを紹介します。</p>
+                <div class="intro_content_right">
+                    <h3>reserve</h3>
+                    <p>ケーキを買うときは予約がおすすめ。予約の利点と予約する時に事前に決めておくことを紹介します。</p>
+                </div>
             </div>
         </div>
     </section>
